@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/documentqa
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show_sql: true
+        jdbc:
+          time_zone: UTC
+        physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  cache:
+    type: redis
+    redis:
+      host: localhost
+      port: 6379
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  batch:
+    job:
+      enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+jwt:
+  secret: cf65afef6e3a15c023b5e18bbb18e9323375274856383fd0d47c98f908de1b96
+  expiration: 86400000 # 24 hours in milliseconds
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework: INFO
+    com.project.documentqa: DEBUG 
