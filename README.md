@@ -14,25 +14,31 @@ A Spring Boot application for document ingestion and Q&A functionality with auth
 
 1. Clone the Repository
    git clone https://github.com/bishtkb/document-qa
+   
    cd document-qa
 
-2. Install Required Tools
+3. Install Required Tools
    Ensure the following tools are installed on your system:
+   
      Java 17+
+   
      Gradle 7.6+
+   
      PostgreSQL 14+
+   
      Redis 6+
+   
      RabbitMQ 3.8+
 
-3. Set Up the PostgreSQL Database
+5. Set Up the PostgreSQL Database
   
-4. Start Redis Server
+6. Start Redis Server
    
-5. Start RabbitMQ Server
+7. Start RabbitMQ Server
 
-6. Build the Application
+8. Build the Application
 
-7. Run the Application
+9. Run the Application
 
 
 ## Setup Instructions
